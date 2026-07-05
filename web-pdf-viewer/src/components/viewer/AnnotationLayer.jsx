@@ -234,7 +234,7 @@ export const AnnotationLayer = ({ pageNumber, width, height }) => {
           left: 0,
           width: `${width}px`,
           height: `${height}px`,
-          pointerEvents: ['hand', 'highlight', 'underline', 'strikethrough'].includes(activeTool) ? 'none' : 'auto',
+          pointerEvents: ['highlight', 'underline', 'strikethrough'].includes(activeTool) ? 'none' : 'auto',
           cursor: TOOLS[activeTool]?.cursor || 'default',
           zIndex: 2,
           touchAction: 'none'
